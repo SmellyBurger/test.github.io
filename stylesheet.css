@@ -36,7 +36,7 @@
     text-indent: 24px;
 }
 
-.sbabout {
+.button {
     scroll-behavior: smooth;
     scroll-margin-bottom: 100px;
     background-color: #2C2F33;
@@ -46,17 +46,18 @@
     width: 125px;
     height: 60px;
     position: relative;
-    top: -250px;
+    top: -245px;
     align-content: center;
     left: 165px;
     border-radius: 15px;
-    text-indent: 35px;
+    text-indent: 10px;
     border-radius: 15px;
     padding: 32px, 64px;
     display: inline-block;
     text-decoration: none;
     line-height: 60px;
-    text-indent: 22px;
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
 .Profiles {
@@ -166,9 +167,37 @@
     visibility: visible;
 }
 
+.dcttc {
+    visibility: hidden;
+    color: #D2DBFF;
+    position: absolute;
+    font-size: 15px;
+    left: -35px;
+    top: 60px;
+    visibility: hidden;
+    font-family: 'tradegothiclt-bold', sans-serif;
+}
+
 .discord:hover .dctt {
     visibility: visible;
 }
+
+.discord:active .dctt {
+    visibility: hidden;
+}
+
+.discord:active .dcttc {
+    visibility: visible;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
 
 .SkUnity:hover .sutt {
     visibility: visible;
@@ -251,7 +280,7 @@
     color: #D2DBFF;
     position: absolute;
     top: 800px;
-    text-indent: 375px;
+    text-indent: 590px;
     font-size: 80px;
     font-family: 'tradegothiclt-bold', sans-serif;
 }
@@ -272,12 +301,13 @@
 
 .AMBlocks:hover {
     transition: 0.75s;
-    transform: translateY(-20px);
+    transform: translateY(-15px);
+    box-shadow: #1F2225;
 }
 
 .AMBlocks:not(hover) {
     transition: 0.5s;
-    transform: translateY(20px);
+    transform: translateY(15x);
 }
 
 .sbhome:hover {
@@ -298,4 +328,8 @@
 .sbabout:not(:hover) {
     transition-duration: 0.3s;
     transform: translateY(5px);
+}
+
+.paragraph1 {
+    letter-spacing: 1.5px;
 }
