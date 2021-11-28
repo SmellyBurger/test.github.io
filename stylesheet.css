@@ -6,7 +6,7 @@
     background-color: #23272A;
     position: relative;
     top: 0px;
-    height: 2000px;
+    height: 2800px;
     right: 0px;
     bottom: 0px;
     left: 0px;
@@ -15,6 +15,48 @@
 .Top {
     width: 1500px;
     height: 700px;
+}
+
+
+
+.viewbutton {
+    background-color: #2C2F33;
+    font-family: 'tradegothiclt-bold', sans-serif;
+    font-size: 30px;
+    color: #D2DBFF;
+    width: 125px;
+    height: 60px;
+    position: relative;
+    top: -309px;
+    left: 428px;
+    border-radius: 15px;
+    border-radius: 15px;
+    padding: 32px, 64px;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 60px;
+    text-indent: 18px;
+}
+
+.viewscounter {
+    position: absolute;
+    font-size: 30px;
+    visibility: hidden;
+
+}
+
+.viewbutton:hover .viewscounter {
+    visibility: visible;
+}
+
+.viewbutton:hover {
+    transition: 0.3s;
+    transform: translateY(-5px);
+}
+
+.viewbutton:not(hover) {
+    transition: 0.3s;
+    transform: translateY(5px);
 }
 
 .sbhome {
@@ -46,7 +88,7 @@
     width: 125px;
     height: 60px;
     position: relative;
-    top: -245px;
+    top: -250px;
     align-content: center;
     left: 165px;
     border-radius: 15px;
@@ -272,7 +314,7 @@
     background-color: #1F2225;
     width: 100%;
     top: 100px;
-    height: 1500px;
+    height: 1200px;
     scroll-behavior: smooth;
 }
 
@@ -320,12 +362,12 @@
     transform: translateY(5px);
 }
 
-.sbabout:hover {
+.button:hover {
     transition-duration: 0.3s;
     transform: translateY(-5px);
 }
 
-.sbabout:not(:hover) {
+.button:not(:hover) {
     transition-duration: 0.3s;
     transform: translateY(5px);
 }
