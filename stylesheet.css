@@ -365,9 +365,6 @@
     top: 200px;
     height: 600px;
     width: 1100px;
-    outline-style: solid;
-    outline-width: 2px;
-    outline-color: #1B1E21;
 }
 
 .FoldersSidebar {
@@ -393,22 +390,23 @@
     display: inline-block;
     color: #738ADB;
     font-size: 50px;
-    top: 30px;
-    left: 50px;
+    top: 20px;
+    left: 30px;
 }
 
 .Firstfolder {
     position: relative;
     top: 30px;
-    left: 5px;
+    left: 20px;
 }
 
 .Secondfolder {
     border: 10px solid #121417;
+    background-color: #121417;
     position: relative;
     font-size: 50px;
-    top: -30px;
-    left: 65px;
+    top: -100px;
+    left: 70px;
 }
 
 .Secondfoldername {
@@ -418,7 +416,7 @@
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif; 
     bottom: 40px;
-    left: 40px;
+    left: 45px;
 }
 
 .Secondfolder:hover .Secondfoldername{
@@ -428,10 +426,21 @@
 .line1 { 
     position: relative;
     border-left: 1px solid #2E2F32;
+    border-bottom: 1px solid #2E2F32;
     top: 10px;
     height: 70px;
     left: 50px;
 }
+
+.line2 { 
+    position: relative;
+    border-left: 1px solid #2E2F32;
+    border-bottom: 1px solid #2E2F32;
+    top: 40px;
+    height: 70px;
+    left: 50px;
+}
+
 
 .Firstfolder:hover .Firstfoldername {
     visibility: visible;
@@ -439,12 +448,12 @@
 
 .Firstfolder:hover {
     transition-duration: 0.25s;
-    transform: translateX(-20px);
+    transform: translateX(-5px);
 }
 
 .Firstfolder:not(:hover) {
     transition-duration: 0.3s;
-    transform: translateX(10px);
+    transform: translateX(5px);
 }
 
 .Firstfoldername {
@@ -467,5 +476,68 @@
 }
 
 .Secondfolder:hover .Secondfoldername {
-    
+    visibility: visible;
+}
+
+.TextDisplayHeadingSkyier {
+    position: relative;
+    color: #D2DBFF;
+    bottom: 555px;
+    font-size: 20px;
+    font-family: 'tradegothiclt-bold', sans-serif;
+    left: 250px
+}
+
+.TextDisplayContentSkyier {
+    letter-spacing: 1px;
+    position: relative;
+    color: #D2DBFF;
+    bottom: 555px;
+    font-size: 25px;
+    left: 250px
+}
+
+.TextDisplayLinksSkyier {
+    position: relative;
+    color: #D2DBFF;
+    bottom: 400px;
+    font-size: 25px;
+    left: 250px;
+    text-decoration: none;
+}
+
+.Thirdfoldername {
+    visibility: hidden;
+    position: relative;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif; 
+    bottom: 40px;
+    left: 45px;
+}
+
+.Thirdfolder {
+    border: 10px solid #121417;
+    background-color: #121417;
+    position: relative;
+    font-size: 50px;
+    top: -100px;
+    left: 60px;
+}
+
+.Thirdfolder:hover {
+    transition-duration: 0.25s;
+    transform: translateX(-3px);
+}
+
+.Thirdfolder:hover .Thirdfoldername {
+    visibility: visible;
+}
+
+.Thirdfolder:not(:hover) {
+    transition-duration: 0.25s;
+    transform: translateX(20px);
+}
+
+.Thirdfolder:active .TextDisplayT {
+    content: "penis";
 }

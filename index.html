@@ -82,13 +82,26 @@
                                         <div class="FolderSlidedown">
                                             <l class="Folderslisticon">
                                                 <div class="Firstfolder">
-                                                    <a><i class="fas fa-folder"></i> <div class="Firstfoldername">Projects</div> </a>
+                                                    <i class="fas fa-folder"></i> <div class="Firstfoldername">Projects</div>
                                                 </div>
-                                                <div class="lines"><div class="line1"></div><div class=:"line2"></div></div>
+                                                <div class="lines">
+                                                    <div class="line1"></div>
+                                                    <div class="line2"></div>
+                                                </div>
                                                 <div class="Secondfolder">
                                                    <i class="fas fa-file-alt"></i> <div class="Secondfoldername">Skyier.txt</div>
                                                 </div>
+                                                <div class="Thirdfolder">
+                                                    <a id="ChangeTextDisplay" onclick="myFunction()"><i class="fas fa-file-alt"></i> <div class="Thirdfoldername">Website.txt</div></a>
+                                                </div>
                                             </l>
+                                        </div>
+                                    </div>
+                                    <div class"TextDisplay">
+                                        <div class="Skyier">
+                                            <div class="TextDisplayHeadingSkyier"><h1>Skyier</h1></div>
+                                            <div class="TextDisplayContentSkyier"><p>Skyier is a minecraft server hosted on the Minehut server hoster, expanding <br>upon the 'gens server' catergory and is being developed by me!<br></br><br>Skyier introduces new elements and new mechanics, different to any<br> normal gen server.</br></br> </br></p></div>
+                                            <div class="TextDisplayLinksSkyier"><a href="https://discord.gg/S86q9uHS" style="color: inherit; " target="_blank ">Discord<a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -106,7 +119,10 @@
             </div>
 
             <script>
-
+                function myFunction() {
+                    console.log("test");
+                    document.getElementById('ChangeTextDisplay').setAttribute("TextDisplayHeadingSkyier", "test");
+                }
             </script>  
 
         </body>
