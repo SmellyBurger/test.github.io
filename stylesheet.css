@@ -209,26 +209,7 @@
     visibility: visible;
 }
 
-.dcttc {
-    visibility: hidden;
-    color: #D2DBFF;
-    position: absolute;
-    font-size: 15px;
-    left: -35px;
-    top: 60px;
-    visibility: hidden;
-    font-family: 'tradegothiclt-bold', sans-serif;
-}
-
 .discord:hover .dctt {
-    visibility: visible;
-}
-
-.discord:active .dctt {
-    visibility: hidden;
-}
-
-.discord:active .dcttc {
     visibility: visible;
 }
 
@@ -322,12 +303,12 @@
     color: #D2DBFF;
     position: absolute;
     top: 800px;
-    text-indent: 590px;
+    text-indent: 730px;
     font-size: 80px;
     font-family: 'tradegothiclt-bold', sans-serif;
 }
 
-.AMBlocks {
+.Aboutme {
     font-family: Arial, Helvetica, sans-serif;
     color: #D2DBFF;
     position: absolute;
@@ -341,13 +322,13 @@
     font-size: 20px;
 }
 
-.AMBlocks:hover {
+.Aboutme:hover {
     transition: 0.75s;
     transform: translateY(-15px);
-    box-shadow: #1F2225;
+    box-shadow: #121314;
 }
 
-.AMBlocks:not(hover) {
+.Aboutme:not(hover) {
     transition: 0.5s;
     transform: translateY(15x);
 }
@@ -374,4 +355,117 @@
 
 .paragraph1 {
     letter-spacing: 1.5px;
+}
+
+.FoldersBlock {
+    position: relative;
+    border-radius: 15px;
+    background-color: #1D1F22;
+    left: 500px;
+    top: 200px;
+    height: 600px;
+    width: 1100px;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: #1B1E21;
+}
+
+.FoldersSidebar {
+    position: relative;
+    background-color: #121417;
+    border-radius: 8px;
+    left: -25px;
+    width: 250px;
+    height: 100%;
+}
+
+.FoldersSidebar:hover {
+    transition-duration: 0.85s;
+    transform: translateX(-1px);
+}
+
+.FoldersSidebar:not(:hover) {
+    transition-duration: 0.85s;
+    transform: translateX(1px);
+}
+
+.Folderslisticon {
+    display: inline-block;
+    color: #738ADB;
+    font-size: 50px;
+    top: 30px;
+    left: 50px;
+}
+
+.Firstfolder {
+    position: relative;
+    top: 30px;
+    left: 5px;
+}
+
+.Secondfolder {
+    border: 10px solid #121417;
+    position: relative;
+    font-size: 50px;
+    top: -30px;
+    left: 65px;
+}
+
+.Secondfoldername {
+    width: 125px;
+    visibility: hidden;
+    position: relative;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif; 
+    bottom: 40px;
+    left: 40px;
+}
+
+.Secondfolder:hover .Secondfoldername{
+    visibility: visible;
+}
+
+.line1 { 
+    position: relative;
+    border-left: 1px solid #2E2F32;
+    top: 10px;
+    height: 70px;
+    left: 50px;
+}
+
+.Firstfolder:hover .Firstfoldername {
+    visibility: visible;
+}
+
+.Firstfolder:hover {
+    transition-duration: 0.25s;
+    transform: translateX(-20px);
+}
+
+.Firstfolder:not(:hover) {
+    transition-duration: 0.3s;
+    transform: translateX(10px);
+}
+
+.Firstfoldername {
+    visibility: hidden;
+    position: relative;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif; 
+    bottom: 40px;
+    left: 60px;
+}
+
+.Secondfolder:hover {
+    transition-duration: 0.25s;
+    transform: translateX(-10px);
+}
+
+.Secondfolder:not(:hover) {
+    transition-duration: 0.25s;
+    transform: translateX(10px);
+}
+
+.Secondfolder:hover .Secondfoldername {
+    
 }
