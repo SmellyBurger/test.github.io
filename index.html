@@ -31,7 +31,6 @@
                                 <a href="#aboutme" class="button"><span>Current</span></a>
                                 <div id="view">
                                     <a href="#containers" class="Others">Others</a>
-                                    <h3 class="viewscounter" id="view">Test</h3>
                                 </div>
                             </div>
                         </ul>
@@ -89,19 +88,20 @@
                                                     <div class="line2"></div>
                                                 </div>
                                                 <div class="Secondfolder">
-                                                   <i class="fas fa-file-alt"></i> <div class="Secondfoldername">Skyier.txt</div>
+                                                   <a id="Skyier" onclick="SkyierText()"><i class="fas fa-file-alt"></i> <div class="Secondfoldername">Skyier.txt</div>
                                                 </div>
                                                 <div class="Thirdfolder">
-                                                    <a id="ChangeTextDisplay" onclick="myFunction()"><i class="fas fa-file-alt"></i> <div class="Thirdfoldername">Website.txt</div></a>
+                                                    <a id="Website" onclick="WebsiteText()"><i class="fas fa-file-alt"></i> <div class="Thirdfoldername">Website.txt</div></a>
                                                 </div>
                                             </l>
                                         </div>
                                     </div>
-                                    <div class"TextDisplay">
-                                        <div class="Skyier">
-                                            <div class="TextDisplayHeadingSkyier"><h1>Skyier</h1></div>
-                                            <div class="TextDisplayContentSkyier"><p>Skyier is a minecraft server hosted on the Minehut server hoster, expanding <br>upon the 'gens server' catergory and is being developed by me!<br></br><br>Skyier introduces new elements and new mechanics, different to any<br> normal gen server.</br></br> </br></p></div>
-                                            <div class="TextDisplayLinksSkyier"><a href="https://discord.gg/S86q9uHS" style="color: inherit; " target="_blank ">Discord<a></div>
+                                    <div class="TextBlock">
+                                        <div id="TextDisplay" class="TextDisplays">
+                                            <div class="TextDisplayHeadingSkyier">
+                                                <h1 value="Test" id="Heading">This is a test heading</h1>
+                                            </div>
+                                            <div class="TextDisplayParagraph"><p id="Paragraph">This is a test paragraph</p></div>
                                         </div>
                                     </div>
                                 </div>
@@ -119,9 +119,13 @@
             </div>
 
             <script>
-                function myFunction() {
-                    console.log("test");
-                    document.getElementById('ChangeTextDisplay').setAttribute("TextDisplayHeadingSkyier", "test");
+                function WebsiteText() {
+                    document.getElementById('Heading').textContent = "Website";
+                    document.getElementById('Paragraph').textContent = "This website! Its a first time creating any website, made purely from HTML and CSS (And a little sprinkle of JS) I plan to update this as I get older and learn more about what I want to do and how I can do it!"
+                }
+                function SkyierText() {
+                    document.getElementById('Heading').textContent = "Skyier";
+                    document.getElementById('Paragraph').textContent = "Skyier is a minecraft server hosted on the Minehut server hoster, expanding upon the 'gens server' catergory and is being developed by me!Skyier introduces new elements and new mechanics, different to any normal gen server"
                 }
             </script>  
 
