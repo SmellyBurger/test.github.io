@@ -18,7 +18,11 @@
     height: 700px;
 }
 
-
+.sb {
+    position: relative;
+    left: 160px;
+    bottom: 250px;
+}
 
 .Others {
     background-color: #2C2F33;
@@ -29,7 +33,7 @@
     height: 60px;
     position: relative;
     top: -310px;
-    left: 428px;
+    left: 968px;
     border-radius: 15px;
     border-radius: 15px;
     padding: 32px, 64px;
@@ -58,7 +62,7 @@
     height: 60px;
     position: relative;
     top: -250px;
-    left: 160px;
+    left: 700px;
     border-radius: 15px;
     border-radius: 15px;
     padding: 32px, 64px;
@@ -80,7 +84,7 @@
     position: relative;
     top: -250px;
     align-content: center;
-    left: 165px;
+    left: 705px;
     border-radius: 15px;
     text-indent: 10px;
     border-radius: 15px;
@@ -468,12 +472,12 @@
 
 .Secondfolder:hover {
     transition-duration: 0.25s;
-    transform: translateX(-10px);
+    transform: translateX(-3px);
 }
 
 .Secondfolder:not(:hover) {
     transition-duration: 0.25s;
-    transform: translateX(10px);
+    transform: translateX(3px);
 }
 
 .Secondfolder:hover .Secondfoldername {
@@ -528,7 +532,7 @@
     position: relative;
     font-size: 50px;
     top: -100px;
-    left: 60px;
+    left: 70px;
 }
 
 .Thirdfolder:hover {
@@ -542,7 +546,7 @@
 
 .Thirdfolder:not(:hover) {
     transition-duration: 0.25s;
-    transform: translateX(20px);
+    transform: translateX(3px);
 }
 
 .End {
@@ -564,6 +568,8 @@
 .ExperienceBlock {
     color: #D2DBFF;
     position: relative;
+    font-family: 'tradegothiclt-bold', sans-serif;
+    text-align: center;
     background-color: #2C2F33;
     width: 300px;
     height: 600px;
@@ -571,4 +577,21 @@
     left: 100px;
     border-radius: 15px;
     font-size: 20px;
+}
+
+.Ebp {
+    position: relative;
+    top: 30px;
+    font-family: 'tradegothiclt-bold', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.Ebh {
+    position: relative;
+    top: 20px;
+}
+
+.ebp2 {
+    position: relative;
+    bottom: 10px;
 }
